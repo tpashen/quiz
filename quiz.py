@@ -92,5 +92,5 @@ app.config['SECRET_KEY'] = '123'
 
 if __name__ == "__main__":
     # Запускаем веб-сервер:
-    app.run()
+    from quiz import app as application
 

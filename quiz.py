@@ -92,5 +92,5 @@ app.config['SECRET_KEY'] = '123'
 
 if __name__ == "__main__":
     # Запускаем веб-сервер:
-    app.run(host=('192.168.0.103'))
+    app.run()
 

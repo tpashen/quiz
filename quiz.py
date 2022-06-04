@@ -90,7 +90,5 @@ app.add_url_rule('/result', 'result', result) # создаёт правило д
 # Устанавливаем ключ шифрования:
 app.config['SECRET_KEY'] = '123'
 
-if __name__ == "__main__":
-    # Запускаем веб-сервер:
-    from quiz import app as application
+
 

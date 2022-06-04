@@ -89,9 +89,8 @@ app.add_url_rule('/test', 'test', test, methods=['post', 'get']) # создаё�
 app.add_url_rule('/result', 'result', result) # создаёт правило для URL '/test'
 # Устанавливаем ключ шифрования:
 app.config['SECRET_KEY'] = '123'
+
 if __name__ == "__main__":
     # Запускаем веб-сервер:
-    app.run(host=('0.0.0.0'))
-
-
+    app.run(host=('192.168.0.103'))
 

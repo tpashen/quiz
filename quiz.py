@@ -90,6 +90,9 @@ app.add_url_rule('/result', 'result', result) # создаёт правило д
 # Устанавливаем ключ шифрования:
 app.config['SECRET_KEY'] = '123'
 
+# Make the WSGI interface available at the top level so wfastcgi can get it.
+wsgi_app = app.wsgi_app
+
 if __name__ == '__main__':
     import os
     HOST = os.environ.get('SERVER_HOST', 'localhost')
